@@ -3,4 +3,4 @@
 
 *SITE DE COMPARAÇÃO: _https://codepen.io/luizomf/full/KKNwMeG_*
 
-Para visualizar o site criado: *http://www.viniciusandradelandingpage.com.br/*
+Para visualizar o site criado: *https://viniciusandradex.github.io/Landing-Page/*
