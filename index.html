@@ -11,13 +11,17 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+
+    <input id="close-menu" type="checkbox" aria-label="Close menu" class="close-menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false; ">
                 <a href="#home">LOGO</a>
             </h1>
+
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false; ">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#grid-one">grid-one</a></li>
                     <li><a href="#gallery">gallery</a></li>
@@ -30,7 +34,8 @@
     </aside>
 
     <div class="menu-spacing"></div>
-    <section id="home" class=" intro main-bg section">
+
+    <section id="home" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>January brings us firefox 85</h2>
@@ -39,7 +44,7 @@
                 </p>
             </div>
             <div class="intro-img">
-                <img src="assets/img/js-not-optimized.svg" alt="O desenho de um homem segurando o logo do css, uma mulher empurrando o logo do java script e um homeme acaricaidno o logo do html">
+                <img src="assets/img/js-not-optimized.svg" alt="O desenho de um homem segurando o logo do css, uma mulher empurrando o logo do java script e um homeme acaricaidno o logo do html">                
             </div>
         </div>
     </section>
@@ -63,6 +68,7 @@
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">My Grid</h2>
             <p class="grid-description">Uma breve descrição.</p>
+
             <div class="grid">
                 <article>
                     <h3>teste 1</h3>
@@ -79,7 +85,6 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At tempora animi quos voluptates nostrum laudantium sint libero fuga enim? Velit minus laboriosam harum tempore iure voluptate! Laborum quis aspernatur quo.
                     </p>
                 </article>
-                
             </div>
         </div>
     </section>
@@ -88,6 +93,7 @@
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Gallery</h2>
             <p class="grid-description">Uma breve descrição.</p>
+
             <div class="grid">
                 <div class="gallery-img">
                     <img src="http://source.unsplash.com/random/360x360?r=1" alt="Random image from unsplash">
@@ -114,8 +120,9 @@
 
     <section id="grid-two" class="grid-one main-bg section">
         <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">Recent Jobs</h2>
-            <p class="grid-description"></p>
+            <h2 class="grid-main-heading">My grid</h2>
+            <p class="grid-description">uma breve descrição</p>
+
             <div class="grid">
                 <article>
                     <h3>A good one</h3>
@@ -145,9 +152,11 @@
             <p>
                 We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.
             </p>    
+
             <div class="responsive-table">
                 <table>
                     <caption>Princig table</caption>
+
                     <thead>
                         <tr>
                             <th>Title 1</th>
@@ -159,13 +168,6 @@
                     </thead>
 
                     <tbody>
-                        <tr>
-                            <td>Content 1</td>
-                            <td>Content 2</td>
-                            <td>Content 3</td>
-                            <td>Content 4</td>
-                            <td>Content 5</td>
-                        </tr>
                         <tr>
                             <td>Content 1</td>
                             <td>Content 2</td>
@@ -203,7 +205,7 @@
         </div>
     </section>
 
-    <section id="contact" class=" intro main-bg section">
+    <section id="contact" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>January brings us firefox 85</h2>
@@ -222,18 +224,22 @@
                         <label for="first-name">First name</label>
                         <input type="text" name="first-name" id="first-name" placeholder="Your name">
                     </div>
+
                     <div class="form-group">
                         <label for="last-name">Last name</label>
                         <input type="text" name="last-name" id="last-name" placeholder="Your last name">
                     </div>
+
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="text" name="email" id="email" placeholder="Your email">
+                        <input type="text" name="email" id="email" placeholder="Your e-mail">
                     </div>
+
                     <div class="form-group full-width">
                         <label for="message">Message</label>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
                     </div>
+                    
                     <div class="form-group full-width">
                         <button type="submit">Send message</button>
                     </div>
@@ -241,9 +247,11 @@
             </div>
         </div>
     </section>
-
+    
     <footer id="footer" class="footer white-bg">
         <p><a rel="nofollow"href="https://github.com/ViniciusAndradex" target="_blank" title="Desenvolverdor da Landing Page">Feito por Vinicius Andrade</a></p>
     </footer>
+
+    <a class="back-to-top" href="#">&#8593</a>
 </body>
 </html>
